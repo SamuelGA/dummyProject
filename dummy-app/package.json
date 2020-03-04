@@ -19,18 +19,13 @@
     "typescript": "^3.8.3"
   },
   "jestSonar": {
-    "reportPath": "reports",
-    "reportFile": "test-reporter.xml",
-    "env": {
-      "jsdom": {
-        "ci": true
-      }
-    }
+    "reportFile": "test-report.xml",
+    "indent": 4
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test:ci": "react-scripts test --ci --silent --testResultsProcessor jest-sonar-reporter --coverage",
+    "test:ci": "react-scripts test --ci --coverage --testResultsProcessor jest-sonar-reporter",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
