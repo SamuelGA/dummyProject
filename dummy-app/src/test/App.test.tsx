@@ -4,5 +4,5 @@ import App from './App';
 
 test('renders learn react link', () => {
   const { getAllByText, getByRole } = render(<App />);
-  expect(getAllByText('About Me'))
+  expect(getAllByText('About Me')).toHaveLength(2);
 });
